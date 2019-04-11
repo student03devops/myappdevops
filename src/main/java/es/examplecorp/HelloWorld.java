@@ -27,7 +27,7 @@ public class HelloWorld implements SparkApplication {
         map.put("Name", text);
 
 
-        get("/",(req,res) -> "hello DevOps: This is fort apache! We are apaches");
+        get("/",(req,res) -> "hello DevOps: This is fort apache! We are apaches. This is automatic");
 
         // Hello World with Template
         get("/hello",(req,res) -> new ModelAndView(map,"hello.hbs"),new HandlebarsTemplateEngine());
